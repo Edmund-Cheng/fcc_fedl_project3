@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans+SC');
+
+#drum_machine {
+    text-align: center;
+}
+.app_title {
+    text-align: center
+}
+.display-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+/*the container for the pad buttons */
+#display-pads {
+    display: grid;
+    grid-template-columns: repeat(3,minmax(60px,80px));
+    grid-template-rows: 60px 60px 60px;
+    grid-gap: 5px;
+    margin-top: 30px;
+}
+/*style the buttons */
+.drum-pad {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    cursor: crosshair;
+    background-color: grey;
+    color : black ;
+    border-radius: 10px;
+    transition: all 400ms ease-in-out;
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Alegreya Sans SC', sans-serif;
+}
+.drum-pad:hover{
+    background-color: lightblue;
+}
+.current-text {
+    text-align: center;
+    position: relative;
+    font-size: 30px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+}
